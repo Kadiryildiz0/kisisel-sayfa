@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadir'in Sayfası</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 2px solid #0f3460;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #e94560;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #a0a0b0;
+            margin-top: 8px;
+            font-size: 1rem;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #e94560;
+            margin-bottom: 16px;
+            border-left: 4px solid #e94560;
+            padding-left: 12px;
+        }
+
+        .about p {
+            color: #c0c0cc;
+            font-size: 1.05rem;
+            background: #1a1a2e;
+            padding: 24px;
+            border-radius: 10px;
+            border: 1px solid #0f3460;
+        }
+
+        .hobbies {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 220px;
+            background: #1a1a2e;
+            border: 1px solid #0f3460;
+            border-radius: 12px;
+            padding: 30px 24px;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #e94560;
+        }
+
+        .card .icon {
+            font-size: 2.4rem;
+            margin-bottom: 14px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #888899;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kadir'in Sayfası</h1>
+        <p>Hoş geldiniz!</p>
+    </header>
+
+    <section class="about">
+        <h2>Hakkımda</h2>
+        <p>
+            Merhaba! Ben Kadir. Teknoloji ve doğayla iç içe yaşamayı seven, sürekli öğrenmeye ve keşfetmeye odaklanan biriyim.
+            Boş zamanlarımda fotoğraf çekiyor, doğa yürüyüşlerine çıkıyor ve ilham veren kitaplar okuyorum.
+            Hayata merakla bakmak ve her günden bir şeyler öğrenmek benim için en büyük motivasyon kaynağı.
+        </p>
+    </section>
+
+    <section>
+        <h2>Hobiler</h2>
+        <div class="hobbies">
+            <div class="card">
+                <div class="icon">📷</div>
+                <h3>Fotoğrafçılık</h3>
+                <p>Anları ölümsüzleştirmek ve dünyayı bir mercekten keşfetmek benim için tutkudan öte.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🥾</div>
+                <h3>Yürüyüş</h3>
+                <p>Doğa yollarında yürümek hem zihnimi temizler hem de bana yeni perspektifler kazandırır.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Okuma</h3>
+                <p>Her kitap yeni bir dünya kapısı. Kurgu, bilim ve felsefe favori türlerim arasında.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
