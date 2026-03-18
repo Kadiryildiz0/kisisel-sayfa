@@ -98,6 +98,64 @@
             color: #888899;
             font-size: 0.9rem;
         }
+
+        .contact-form {
+            background: #1a1a2e;
+            border: 1px solid #0f3460;
+            border-radius: 12px;
+            padding: 36px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #a0a0b0;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: #0f0f0f;
+            border: 1px solid #0f3460;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #e94560;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .btn-submit {
+            background: #e94560;
+            color: #fff;
+            border: none;
+            padding: 13px 36px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn-submit:hover {
+            background: #c73652;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
@@ -134,6 +192,27 @@
                 <h3>Okuma</h3>
                 <p>Her kitap yeni bir dünya kapısı. Kurgu, bilim ve felsefe favori türlerim arasında.</p>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>İletişim</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input type="text" id="name" placeholder="Adınızı girin">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-posta</label>
+                    <input type="email" id="email" placeholder="E-posta adresinizi girin">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" placeholder="Mesajınızı yazın..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Gönder</button>
+            </form>
         </div>
     </section>
 
